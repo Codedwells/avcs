@@ -1,6 +1,15 @@
 package main
 
-import "github.com/codedwells/avcs/cli"
+import (
+	"fmt"
+
+	"github.com/codedwells/avcs/cli"
+)
+
+func init(){
+    cli.GenerateCommand()
+    fmt.Println("CLI initialized")
+}
 
 func main() {
     cli.Execute()
